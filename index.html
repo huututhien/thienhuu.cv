@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/default-avatar.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Assignment 02 - huuttfx17728@funix.edu.vn </title>
+</head>
+<body>
+    <!-- Phần tiêu đề, nền là 1 hình ảnh theo như thiết kế -->
+    <header class="header">
+        <div class="header-background"><img src="img/banner.jpg" alt=""></div>
+        <!-- Đây là thông tin mô tả CV của tôi -->
+        <div class="info">
+            <div class="container">
+                <h1 class="info-name">Từ Thiên Hữu</h1>
+                <p class="info-candidate">Mobile Developer</p>
+            </div>
+        </div>
+
+        <!-- Phần nav-menu, bao gồm 4 menu con với thông tin cá nhân
+            được mở rộng bằng cái hình avatar đè lên trên -->
+        <!-- Các item của phần này được chia bằng flex. Hinh được hiẻn thị đè lên trên các items  -->
+        <div class="navbar">
+            <div class="container">
+                <div class="navs">
+                    <a href="#about" class="nav-menu">
+                        <span>thông tin</span>
+                        <i class="nav-icon icon-user"> </i>
+                    </a>
+                    <a href="#job-info" class="nav-menu">
+                        <span>lý lịch</span>
+                        <i class="nav-icon icon-doc-text-inv"> </i>
+                    </a>
+                    <div class="nav-info">
+                        <h2>Từ Thiên Hữu</h2>
+                        <p>Mobile Developer</p>
+                    </div>
+                    <a href="#certificates" class="nav-menu">
+                        <span>chứng chỉ</span>
+                        <i class="nav-icon icon-mail-alt"> </i>
+                    </a>
+                    <a href="#project" class="nav-menu">
+                        <span>dự án</span>
+                        <i class="nav-icon icon-star-1"> </i>
+                    </a>
+                </div>
+
+                <!-- Phần mở rộng: chèn hình vào giữa thanh nav-bar -->
+                <div class="avatar"><img src="img/huu-avt.JPG" alt=""></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Go to top icon -->
+    <div class="gototop">
+        <a href="#" title="Lên đầu trang">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+              </svg>
+        </a>
+    </div>
+
+    <!-- Phần thân chính, được tách biệt bởi phần đầu header với phần chân trang footer -->
+    <main class="mainarea">
+        <!-- Phần giới thiệu bản thân. Bao gồm mục tiêu và thông tin cá nhân -->
+        <!-- Phần này được chia 2 cột grid, Mục tiêu bên trái và thông tin cá nhân bên phải -->
+        <section class="section" id="about">
+            <div class="container">
+                <!-- Phần mục tiêu -->
+                <div class="item">
+
+                    <div class="item-title">
+                        <h2>Mục tiêu nghề nghiệp</h2> 
+                    </div>
+                    <div class="item-content">
+                        <p>Là một sinh viên đã hoàn thành chương trình <strong>Chứng chỉ doanh nghiệp FUNIX</strong>, tôi rất mong muốn mình được làm việc với vị trí Mobile Developer.</p>
+                        <p>Tôi mong muốn được vận dụng những kiến thức đã được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như hoàn thành tốt công việc được giao.</p>
+                    </div>
+                </div>
+                
+                <!-- Phần thông tin cá nhân và các tài khoản xã hội -->
+                <div class="item">
+                    
+                    <div class="item-title">
+                        <h2>Thông tin cá nhân</h2>
+                    </div>
+                    <div class="item-content">
+                        <!-- Nội dung thông tin cá nhân: được thể hiện bằng grid -->
+                        <div class="infomation">
+                            <div class="labels">Ngày sinh</div>
+                            <div class="details">28 - 05 - 1984</div>
+                            <div class="labels">Giới tính</div>
+                            <div class="details">Nam</div>
+                            <div class="labels">Điện thoại</div>
+                            <div class="details">0938 075 053</div>
+                            <div class="labels">Email</div>
+                            <div class="details">huuttfx17728@funix.edu.vn</div>
+                            <div class="labels">Địa chỉ</div>
+                            <div class="details">Quận 11, Thành phố Hồ Chí Minh</div>
+                            <div class="labels">Website</div>
+                            <div class="details">chuacowebsite.ko</div>
+                        </div>
+
+                        <!-- Phần thông tin mạng xã hội: được thể hiện bằng flex, link ảo -->
+                        <div class="socials">
+                            <a href="#" title="Go to Twitter">
+                                <i class="icon-twitter"> </i>
+                            </a>
+                            <a href="https://www.facebook.com/huu.vps" title="Go to Facebook">
+                                <i class="icon-facebook"> </i>
+                            </a>
+                            <a href="#" title="Go to Google+">
+                                <i class="icon-gplus"> </i>
+                            </a>
+                            <a href="#" title="Go to Linkedin">
+                                <i class="icon-linkedin"> </i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Các kinh nghiệm làm việc, thông tin học vấn -->
+        <!-- Phần này dùng Grid chia 3 cột, mỗi cột dùng flex để tách các phần với nhau -->
+        <section class="section" id="job-info">
+            <div class="container">
+                <!-- Cột thứ 1 -->
+                <div class="col">
+                    <!-- Phần kinh nghiệm làm việc -->
+                    <div class="item" id="experiences">
+                        <div class="item-title">
+                            <div class="item-title--text">
+                                <h2>Kinh nghiệm</h2>
+                            </div>
+                            <div class="item-title--icon">
+                                <i class="ic-toolbox"> </i>
+                            </div>
+                        </div>                        
+					    <div class="item-content">
+                            <!-- Thêm thông tin kinh nghiệm làm việc vào đây. Mỗi kinh nghiệm ở trong 1 group -->
+                            <div class="item-group">
+                                <div class="item-group--title">Thiết kế-in ấn bao bì - tự kinh doanh</div>
+                                <div class="item-group--time">01/2015 - <span class="now">Hiện tại</span></div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Tìm kiếm khách hàng, Xây dựng, phát triển doanh nghiệp.</li>
+                                        <li>Phân tích và thiết kế mẫu cho khách duyệt.</li>
+                                        <li>In ấn và gia công thành phẩm cho khách.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="item-group">
+                                <div class="item-group--title">Web Designer - Công ty Hào Nam</div>
+                                <div class="item-group--time">01/2016 - 09-2020</div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Thiết kế, xây dựng, quản trị Website theo thực tế công ty.</li>
+                                        <li>Tạo dựng hình ảnh sản phẩm đưa lên web.</li>
+                                        <li>Sử dụng các công cụ: Figma, Canva, PTS.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="item-group">
+                                <div class="item-group--title">Tester - Công ty TPL Solutions</div>
+                                <div class="item-group--time">01/2012 - 09-2015</div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Kiểm tra chất lượng các phiên bản được thực hiện bởi Developers.</li>
+                                        <li>Báo cáo tiến độ thực hiện công việc.</li>
+                                        <li>Sử dụng các công cụ automatic test và manual test.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Phần sở thích -->
+                    <!-- Phần này dùng danh sách ul, được thể hiện bằng flex ở ul, li -->
+                    <div class="item" id="hobbies">
+                        <div class="item-title">
+                            <div class="item-title--text">
+                                <h2>Sở thích</h2>
+                            </div>
+                            <div class="item-title--icon">
+                                <i class="ic-telescope"> </i>
+                            </div>                            
+                        </div>
+                        <div class="item-content">
+                            <ul class="hobby">
+                                <!-- Thêm thông tin sở thích vào đây, mỗi sở thích là 1 thẻ <li> -->
+                                <li>
+                                    <i class="ic-megaphone"> </i>
+                                    <p>Âm nhạc</p>
+                                </li>
+                                <li>
+                                    <i class="ic-strategy"> </i>
+                                    <p>Chơi game</p>
+                                </li>
+                                <li>
+                                    <i class="ic-hotairballoon"> </i>
+                                    <p>Du lịch</p>
+                                </li>
+                                <li>
+                                    <i class="ic-basket"> </i>
+                                    <p>Nấu ăn</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột thứ 2 -->
+                <div class="col">
+                    <!-- Phần học vấn -->
+                    <div class="item" id="education">
+                        <div class="item-title">
+                            <div class="item-title--text">
+                                <h2>Học vấn</h2>
+                            </div>
+                            <div class="item-title--icon">
+                                <i class="ic-telescope"> </i>
+                            </div>                            
+                        </div>
+                        <div class="item-content">
+                            <!-- Thêm phần học vấn vào đây. Mỗi chứng chỉ là 1 item-group -->
+                            <div class="item-group">
+                                <div class="item-group--title">chứng chỉ doanh nghiệp - FUNiX</div>
+                                <div class="item-group--time">06/2022 - <span class="now">Hiện tại</span></div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Mobile.</li>
+                                        <li>GPA: 9 / 10</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="item-group">
+                                <div class="item-group--title">Cử nhân - NIIT Hoa Sen</div>
+                                <div class="item-group--time">10/2009 - 06/2012</div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Chuyên ngành: Java Developer</li>
+                                        <li>GPA: 4 / 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" id="languages">
+                        <div class="item-title">
+                            <div class="item-title--text">
+                                <h2>Ngôn ngữ</h2>
+                            </div>
+                            <div class="item-title--icon">
+                                <i class="ic-mic"> </i>
+                            </div>                            
+                        </div>
+                        <div class="item-content">
+                            <!-- Thêm các ngôn ngữ đã biết vào đây, mỗi ngôn ngữ là 1 skills-group -->
+                            <!-- Điểm kỹ năng là inter cho Intermediate hoặc fund cho Fundamental -->
+                            <div class="skills-group">
+                                <div class="title">Tiếng Anh</div>
+                                <div class="points inter"><span> </span><span> </span><span> </span></div>
+                            </div>
+                            <div class="skills-group">
+                                <div class="title">Tiếng Hoa</div>
+                                <div class="points fund"><span> </span><span> </span> <span> </span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="item" id="activities">
+                        <div class="item-title">
+                            <div class="item-title--text">
+                                <h2>Hoạt động</h2>
+                            </div>
+                            <div class="item-title--icon">
+                                <i class="ic-toolbox"> </i>
+                            </div>                            
+                        </div>
+
+						<div class="item-content">
+                            <!-- Thêm các hoạt động vào đây. Mỗi hoạt động là 1 item-group -->
+
+                            <div class="item-group">
+                                <div class="item-group--title">FPT Edu Hackathon 20xx</div>
+                                <div class="item-group--time">03/2019 - 05/2019</div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Giải 3 bảng A</li>
+                                        <li>Đề tài: Trang web về phân loại rác thải.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="item-group">
+                                <div class="item-group--title">Câu lạc bộ Z</div>
+                                <div class="item-group--time">08/2016 - 08/2017</div>
+                                <div class="item-group--details">
+                                    <ul>
+                                        <li>Trưởng ban chuyên môn</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+						</div>
+                    </div>
+
+                    <div class="item" id="skills">
+                        <div class="item-title">
+                            <div class="item-title--text">
+                                <h2>Kỹ năng</h2>
+                            </div>
+                            <div class="item-title--icon">
+                                <i class="ic-tools-2"> </i>
+                            </div>                            
+                        </div>
+                        <div class="item-content">
+                            <!-- Thêm các kỹ năng đã biết vào đây, mỗi kỹ năng là 1 skills-group -->
+                            <!-- Điểm kỹ năng là inter cho Intermediate hoặc fund cho Fundamental -->
+                            <div class="skills-group">
+                                <div class="title">HTML/CSS: Intermediate</div>
+                                <div class="points inter"><span> </span> <span> </span> <span> </span> </div>
+                            </div>
+                            <div class="skills-group">
+                                <div class="title">SCSS: Fundamental</div>
+                                <div class="points fund"><span> </span> <span> </span> <span> </span> </div>
+                            </div>
+                            <div class="skills-group">
+                                <div class="title">Javascript: Intermediate</div>
+                                <div class="points inter"><span> </span> <span> </span> <span> </span> </div>
+                            </div>
+                            <div class="skills-group">
+                                <div class="title">NodeJS: Fundamental</div>
+                                <div class="points fund"><span> </span> <span> </span> <span> </span> </div>
+                            </div>
+                            <div class="skills-group">
+                                <div class="title">Photoshop: Intermediate</div>
+                                <div class="points inter"><span> </span> <span> </span> <span> </span> </div>
+                            </div>
+                            <div class="skills-group">
+                                <div class="title">Illutrator: Intermediate</div>
+                                <div class="points inter"><span> </span> <span> </span> <span> </span> </div>
+                            </div>
+						</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần chứng chỉ, giải thưởng -->
+        <!-- Phần này được thể hiện bằng Grid, Phần tử chẵn được thêm border-left -->
+        <!-- Với phần tử lẻ, ngoại trừ 1, thêm đường gạch phía trên -->
+        <section class="section" id="certificates">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Chứng chỉ - Giải thưởng</h2>
+                </div>
+                
+                <div class="cert-items">
+                    <!-- Thêm các chứng chỉ vào đây. MỖi chứng chỉ là 1 cert-item. -->
+
+                    <div class="cert-item">
+                        <div class="cert-item--image"><img src="img/Cert_DBI.png" alt="Cert_DBI"></div>
+                        <div class="cert-item--details">
+                            <h3 class="title">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</h3>
+                            <ul class="details">
+                                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                                <li>GPA: 8.6</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-item--image"><img src="img/Cert_DBI.png" alt="Cert_DBI"></div>
+                        <div class="cert-item--details">
+                            <h3 class="title">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</h3>
+                            <ul class="details">
+                                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                                <li>GPA: 8.6</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-item--image"><img src="img/Cert_DBI.png" alt="Cert_DBI"></div>
+                        <div class="cert-item--details">
+                            <h3 class="title">CHỨNG CHỈ TIẾNG ANH GIAO TIẾP - FUNIX</h3>
+                            <ul class="details">
+                                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                                <li>GPA: 8.6</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+        </section>
+
+        <!-- Phần dự án -->
+        <!--  -->
+        <section class="section" id="project">
+            <div class="container">
+                <div class="section-title"><h2>Dự án</h2></div>
+                <!-- Nội dung phần này chia bằng flex hàng ngang. Nếu có thêm nữa thì dùng carousel -->
+                <!-- Mỗi item được bố cục bằng flex. Hướng dọc -->
+                <div class="projects">
+                    <!-- Thêm các dự án vào đây. Mỗi dự án là 1 project -->
+                    <div class="project">
+                        <div class="img"><img src="img/project_1.png" alt=""></div>
+                            <div class="title">cv cá nhân</div>
+                            <!-- Phần category: Bố cục bằng Flex  -->
+                            <div class="categories">
+                                <div class="time">2022</div>
+                                <div class="location">
+                                    <i class="icon-user-1"> </i>
+                                    <span>FUNiX</span>
+                                </div>
+                                <div class="position">
+                                    <i class="icon-lamp"> </i>
+                                    <span>Developer</span>
+                                </div>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td class="labels">Mô tả</td>
+                                    <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+                                </tr>
+                                <tr>
+                                    <td class="labels">Nhiệm vụ</td>
+                                    <td>
+                                        <ul>
+                                            <li>Phát triển code</li>
+                                            <li>Review code</li>
+                                            <li>Tối ưu code</li>
+                                            <li>Xử lý lỗi</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="labels">Công nghệ</td>
+                                    <td>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                    </div>
+
+                    <div class="project">
+                        <div class="img"><img src="img/project_2.png" alt=""></div>
+                        <div class="title">trang web quản lý thú cưng</div>
+                        <div class="categories">
+                            <div class="time">2022</div>
+                            <div class="location">
+                                <i class="icon-user-1"> </i>
+                                <span>FUNiX</span>
+                            </div>
+                            <div class="position">
+                                <i class="icon-lamp"> </i>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="labels">Mô tả</td>
+                                <td>Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân nặng, giống, tình trạng tiêm chủng, ... Bao gồm các chức năng thêm / sửa / xóa.</td>
+                            </tr>
+                            <tr>
+                                <td class="labels">Nhiệm vụ</td>
+                                <td>
+                                    <ul>
+                                        <li>Phát triển code</li>
+                                        <li>Review code</li>
+                                        <li>Tối ưu code</li>
+                                        <li>Xử lý lỗi</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="labels">Công nghệ</td>
+                                <td>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="img"><img src="img/project_3.png" alt=""></div>
+                        <div class="title">trang web tin tức</div>
+                        <div class="categories">
+                            <div class="time">2022</div>
+                            <div class="location">
+                                <i class="icon-user-1"> </i>
+                                <span>FUNiX</span>
+                            </div>
+                            <div class="position">
+                                <i class="icon-lamp"> </i>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="labels">Mô tả</td>
+                                <td>Trang web xem tin tức từ nhiều nguồn khác nhau, người dùng có thểìm kiếm các tin tức dựa theo các từ khóa</td>
+                            </tr>
+                            <tr>
+                                <td class="labels">Nhiệm vụ</td>
+                                <td>
+                                    <ul>
+                                        <li>Phát triển code</li>
+                                        <li>Review code</li>
+                                        <li>Tối ưu code</li>
+                                        <li>Xử lý lỗi</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="labels">Công nghệ</td>
+                                <td>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- arrow dung cho carousel. Hien tai duoc an -->
+                <!-- Bỏ ẩn sẽ thấy được vị trí của mũi tên -->
+                <!-- <div class="project-buttons">
+                    <button class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="right">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Đây là chân trang, Thể hiện copyright với thong tin liên hệ. được canh giữa -->
+    <footer class="footer">
+        
+        <div class="contact">
+            <!-- Thêm thông tin liên hệ /mxh vào đây.  -->
+            <a href="https://www.facebook.com/huu.vps" title="Go to Facebook">
+                <i class="icon-facebook-circled"> </i>
+                <span>Facebook</span>
+            </a>
+            <!-- Chưa bổ sung tài khoản Linkedin -->
+            <a href="#" title="Go to Linkedin">
+                <i class="icon-linkedin-circled"> </i>
+                <span>Linkedin</span>
+            </a>
+            <!-- Chưa có tài khoản Github -->
+            <a href="#" title="Go to Github">
+                <i class="icon-github-circled"> </i>
+                <span>Github</span>
+            </a>
+        </div>
+        
+        <!-- Thông tin người làm bài, bài nộp -->
+        <p class="copyright">Bài Assignment 02 - Môn <i>WEB101x_2.1-A_VN Xây dựng website đầu tiên</i> - Được thiết kế bởi <strong>Từ Thiên Hữu</strong> - MSHV: <strong>FX17728</strong> - Email: <i>huuttfx17728@funix.edu.vn</i></p>
+    </footer>
+</body>
+</html>
